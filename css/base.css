@@ -7,11 +7,26 @@
 :root {
   font-size: 16px;
   --color-text: #111;
-  --color-bg: #fff;
-  --color-link: #aaa;
+  --color-bg: #f6f6e1;
+  --color-bg-alt: #a4b2b8;
+  --color-link: rgba(0,0,0,0.6);
   --color-link-hover: #000;
   --page-padding: 1.5rem;
+  --color-title: #000;
 }
+
+.demo-2 {
+  --color-bg: #d8e5ec;
+  --color-bg-alt: #7e8b92;
+  --color-title: #223233;
+}
+
+.demo-3 {
+  --color-bg: #ece6df;
+  --color-bg-alt: #8b8078;
+  --color-title: #191818;
+}
+
 
 body {
   margin: 0;
@@ -23,6 +38,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   height: 100vh;
+  background: url(../img/noise.png), radial-gradient(circle, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+  background-size: 50px, 100% 100vh;
 }
 
 /* Page Loader */
@@ -111,6 +128,8 @@ a:focus-visible {
 .frame {
   padding: var(--page-padding);
   position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
   display: grid;
   z-index: 1000;
   width: 100%;
@@ -120,7 +139,7 @@ a:focus-visible {
   pointer-events: none;
   justify-items: start;
   grid-template-columns: auto auto;
-  grid-template-areas: "title" "archive" "back" "sub" "sponsor" "demos" "tags" "hire";
+  grid-template-areas: "title" "archive" "back" "github" "demos" "sponsor" "tags";
 }
 
 .frame #cdawrap {
@@ -147,16 +166,12 @@ a:focus-visible {
   justify-self: start;
 }
 
-.frame__sub {
-  grid-area: sub;
-}
-
 .frame__tags {
   grid-area: tags;
 }
 
-.frame__hire {
-  grid-area: hire;
+.frame__github {
+  grid-area: github;
 }
 
 .frame__demos {
@@ -225,7 +240,7 @@ a:focus-visible {
   text-align: center;
   position: relative;
   z-index: 10;
-  color: #fb77a4;
+  color: var(--color-title);
   text-transform: uppercase;
 }
 
@@ -240,9 +255,6 @@ a:focus-visible {
 }
 
 @media screen and (min-width: 53em) {
-  body {
-    --page-padding: 2rem 3rem;
-  }
   .frame {
     position: fixed;
     top: 0;
@@ -252,10 +264,10 @@ a:focus-visible {
     grid-template-columns: auto auto auto 1fr;
     grid-template-rows: auto auto;
     align-content: space-between;
-    grid-template-areas: "title back archive sponsors" "tags demos hire sub";
+    grid-template-areas: "title back archive github sponsors" "tags tags tags demos demos";
   }
   .frame #cdawrap,
-  .frame__sub {
+  .frame__demos {
     justify-self: end;
   }
 
