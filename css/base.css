@@ -7,8 +7,8 @@
 :root {
   font-size: 16px;
   --color-text: #111;
-  --color-bg: #f6f6e1;
-  --color-bg-alt: #a4b2b8;
+  --color-bg: #e3efed;
+  --color-bg-alt: #8ca9af;
   --color-link: rgba(0,0,0,0.6);
   --color-link-hover: #000;
   --page-padding: 1.5rem;
@@ -39,7 +39,7 @@ body {
   overflow: hidden;
   height: 100vh;
   background: url(../img/noise.png), radial-gradient(circle, var(--color-bg) 0%, var(--color-bg-alt) 100%);
-  background-size: 50px, 100% 100vh;
+  background-size: 150px, 100% 100vh;
 }
 
 /* Page Loader */
