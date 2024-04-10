@@ -2,11 +2,11 @@
 
 _Some Ideas for Image Entrance Animations._
 
-![Image Title](/cover.png)
+![Image Title](https://tympanus.net/codrops/wp-content/uploads/2024/03/stackentrance_feat.jpg?x87314)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/?p=76798)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](http://tympanus.net/Development/EntranceAnimationForImages/)
 
 ## Installation
 

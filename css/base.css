@@ -264,7 +264,7 @@ a:focus-visible {
     grid-template-columns: auto auto auto 1fr;
     grid-template-rows: auto auto;
     align-content: space-between;
-    grid-template-areas: "title back archive github sponsors" "tags tags tags demos demos";
+    grid-template-areas: "title back archive github sponsor" "tags tags tags demos demos";
   }
   .frame #cdawrap,
   .frame__demos {
